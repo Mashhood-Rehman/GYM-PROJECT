@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.hero {
+  padding: 150px 0 70px 0;
+  padding-left: 2vw;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  background-attachment: fixedx;
+  display: flex;
+  align-items: center;
+  background: url(../public/img3.jpg) rgba(0, 0, 0, 0.75);
+  min-height: 100vh;
+  background-blend-mode: darken;
+  z-index: -1;
+}
+.heading {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  gap: 1px;
+  font-weight: bolder;
+  font-size: 40px;
+  font-family: sans-serif;
+  left: 50px;
+  top: 145px;
+}
+.navbar {
+  position: absolute;
+  top: 30px;
+  font-size: 20px;
+  padding: 10px;
+  left: 50px;
+  z-index: 1;
+  color: white;
+  border: 1px solid white;
+}
+.para {
+  color: white;
+  z-index: 1;
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  line-height: 45px;
+  font-weight: bold;
+  left: 50px;
+  position: absolute;
+}
+
+.para p:last-child {
+  color: rgb(100, 50, 1000);
+}
+
+.parentButton button {
+  position: relative;
+  top: 100px;
+  left: 30px;
+  margin-right: 15px;
+  background: transparent;
+  color: rgb(100, 50, 1000);
+  border: 1px solid rgb(100, 50, 1000);
+  padding: 15px;
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    padding: 100px 0 50px 0;
+  }
+  .heading {
+    font-size: 30px;
+    top: 200px;
+  }
+  .navbar {
+    top: 25px;
+    font-size: 18px;
+  }
+  .para {
+    font-size: 1.5rem;
+    line-height: 35px;
+  }
+  .parentButton button {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    padding: 80px 0 40px 0;
+  }
+  .heading {
+    font-size: 25px;
+    top: 200px;
+  }
+  .navbar {
+    top: 25px;
+    font-size: 16px;
+  }
+  .para {
+    font-size: 1.2rem;
+    line-height: 30px;
+  }
+  .parentButton button {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 0 30px 0;
+  }
+  .heading {
+    font-size: 20px;
+    top: 180px;
+  }
+  .navbar {
+    top: 25px;
+    font-size: 14px;
+  }
+  .para {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+  .parentButton button {
+    padding: 6px;
+  }
+}
+
+@media (max-width: 300px) {
+  .hero {
+    padding: 40px 0 20px 0;
+  }
+  .heading {
+    font-size: 18px;
+    top: 200px;
+  }
+  .navbar {
+    top: 25px;
+    font-size: 12px;
+  }
+  .para {
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+  .parentButton button {
+    padding: 4px;
+  }
+}
+.parentwork {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  margin-top: 5%;
+  width: 80%;
+  justify-content: space-between;
+}
+.parentwork p {
+  color: grey;
+}
+
+.bootcamp p {
+  color: grey;
+}
+
+.loremm {
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+}
+.parentloremm {
+  display: grid;
+  gap: 25px;
+}
+.parentloremm :hover {
+  background-color: black;
+  transition: 0.2s;
+}
+.loremm:hover h2 {
+  color: blue;
+  transition: 0.2s;
+}
+
+@media screen and (min-width: 480) {
+  .parentwork {
+    display: flex;
+    flex-direction: column;
+  }
+  .imgg {
+    height: 100px;
+    width: fit-content;
+  }
+  .loremm {
+    width: fit-content;
+  }
+}
+@media screen and (min-width: 768px) {
+  .parentwork {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .parentwork {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.imagee {
+  margin-top: -200%;
+}
+
+.imagee1 {
+  margin-top: -100%;
+}
+
+.imagee2 {
+  margin-top: -30%;
+}
+
+.gallery {
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 100px 0 50px 0;
+}
+.gallery h1 {
+  color: #0095ff;
+  font-size: 2.2rem;
+  margin: 0 auto;
+  letter-spacing: 1px;
+}
+.gallery .images {
+  display: flex;
+  gap: 15px;
+  max-width: 1500px;
+  min-width: 1500px;
+  margin: 0 auto;
+}
+.gallery .images div {
+  flex: 1;
+}
+.gallery .images img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 1520px) {
+  .gallery {
+    padding: 50px 20px 50px 20px;
+  }
+  .gallery .images {
+    min-width: 100%;
+    gap: 25px;
+  }
+}
+@media (max-width: 1200px) {
+  .gallery h1 {
+    font-size: 1.6rem;
+  }
+}
+
+.myheading {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+.parentCard {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4%;
+}
+.myImageee {
+  position: relative !important;
+}
+.myImageee img {
+  height: 400px;
+  width: 350px;
+  filter: brightness(50%);
+}
+.price {
+  top: 10px;
+  position: absolute;
+
+  font-family: sans-serif;
+}
+.headingOne {
+  color: #0095ff;
+  font-size: 20px;
+  margin-bottom: 7%;
+}
+.pricee {
+  font: bolder;
+  color: white;
+}
+.icon {
+  display: flex;
+}
+.contactimg {
+  filter: brightness(40%);
+}
